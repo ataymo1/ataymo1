@@ -19,6 +19,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: main
       - name: Generate streak stats
         uses: be-next/github-streak-stats-action@681434bed24fb0f179e819bb6bae31029baa4796 # v1.1.0
         with:
